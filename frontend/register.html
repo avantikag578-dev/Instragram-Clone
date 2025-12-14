@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Sign Up • Instagram</title>
-
 <style>
 body{
   margin:0;
@@ -14,18 +13,15 @@ body{
   align-items:center;
   height:100vh;
 }
-
 .auth-container{
   width:350px;
 }
-
 .card{
   background:white;
   border:1px solid #dbdbdb;
   padding:35px;
   text-align:center;
 }
-
 .logo{
   font-family:'Segoe Script', cursive;
   font-size:38px;
@@ -41,13 +37,11 @@ body{
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
 }
-
 .subtitle{
   color:#8e8e8e;
   font-size:14px;
   margin-bottom:20px;
 }
-
 input{
   width:100%;
   padding:11px;
@@ -57,7 +51,6 @@ input{
   border-radius:4px;
   font-size:14px;
 }
-
 button{
   width:100%;
   padding:9px;
@@ -70,17 +63,14 @@ button{
   cursor:pointer;
   margin-top:12px;
 }
-
 button:hover{
   background:#1877f2;
 }
-
 .terms{
   font-size:12px;
   color:#8e8e8e;
   margin-top:15px;
 }
-
 .login-box{
   background:white;
   border:1px solid #dbdbdb;
@@ -89,7 +79,6 @@ button:hover{
   text-align:center;
   font-size:14px;
 }
-
 .login-box a{
   color:#0095f6;
   font-weight:600;
@@ -97,38 +86,26 @@ button:hover{
 }
 </style>
 </head>
-
 <body>
-
 <div class="auth-container">
-
   <div class="card">
     <div class="logo">Instagram</div>
     <div class="subtitle">
       Sign up to see photos and videos from your friends.
     </div>
-
-    <!-- INPUTS -->
     <input type="email" id="email" placeholder="Email" required>
     <input type="text" id="username" placeholder="Username" required>
     <input type="password" id="password" placeholder="Password" required>
-
-    <!-- BUTTON -->
     <button onclick="register()">Sign up</button>
-
     <div class="terms">
       By signing up, you agree to our <b>Terms</b> and <b>Privacy Policy</b>.
     </div>
   </div>
-
   <div class="login-box">
     Have an account?
     <a href="login.html">Log in</a>
   </div>
-
 </div>
-
-<!-- JS -->
 <script src="js/register.js"></script>
 </body>
 </html>
