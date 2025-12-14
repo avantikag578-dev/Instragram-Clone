@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+}
+
+body {
+  display: flex;
+  background: #000;
+  color: white;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 240px;
+  padding: 20px;
+  border-right: 1px solid #262626;
+}
+
+.sidebar-logo {
+  font-family: 'Segoe Script', cursive;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.menu a {
+  display: block;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.menu a:hover,
+.menu .active {
+  background: #121212;
+}
+
+/* PROFILE */
+.profile-container {
+  width: 935px;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.profile-header {
+  display: flex;
+  gap: 80px;
+  margin-bottom: 40px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* INFO */
+.username-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.username-row h2 {
+  font-weight: 400;
+}
+
+.edit-btn,
+.archive-btn {
+  background: #262626;
+  border: none;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.stats {
+  display: flex;
+  gap: 25px;
+  margin: 15px 0;
+}
+
+.bio p {
+  font-size: 14px;
+}
+
+/* HIGHLIGHTS */
+.highlights {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.highlight {
+  text-align: center;
+}
+
+.highlight-circle {
+  width: 77px;
+  height: 77px;
+  border: 1px solid #262626;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+/* TABS */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  border-top: 1px solid #262626;
+  margin-bottom: 20px;
+}
+
+.tabs span {
+  padding: 15px 0;
+  cursor: pointer;
+  font-size: 13px;
+  color: #8e8e8e;
+}
+
+.tabs .active {
+  color: white;
+  border-top: 1px solid white;
+}
+
+/* POSTS GRID */
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.post-item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}

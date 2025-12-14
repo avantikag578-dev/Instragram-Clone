@@ -1,0 +1,218 @@
+*{  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+}
+body {
+  display: flex;
+  background: #000;
+  color: white;
+}
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  padding: 20px;
+  border-right: 1px solid #262626;
+}
+.sidebar-logo {
+  font-family: 'Segoe Script', cursive;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+.menu a {
+  display: block;
+  padding: 12px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.menu a:hover {
+  background: #121212;
+}
+.main {
+  width: 630px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.stories {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+.story {
+  width: 66px;              
+  text-align: center;
+  flex-shrink: 0;           
+}
+.story img {
+  width: 56px;             
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ff2d55;
+  display: block;
+  margin: auto;
+}
+.circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.post {
+  background: #000;
+  border-bottom: 1px solid #262626;
+  margin-bottom: 20px;
+}
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 100px;
+}
+.post-header img {
+  width: 10px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.post img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+}
+.post-actions {
+  padding: 10px;
+  font-size: 20px;
+}
+.post-actions span {
+  margin-right: 15px;
+  cursor: pointer;
+}
+.caption {
+  padding: 0 10px 10px;
+}
+.right-panel {
+  width: 300px;
+  padding: 20px;
+}
+.profile-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.profile-card img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.switch {
+  margin-left: auto;
+  color: #0095f6;
+  font-size: 12px;
+  cursor: pointer;
+}
+.suggestions .title {
+  color: #8e8e8e;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.suggestion {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.suggestion img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.suggestion button {
+  margin-left: auto;
+  background: none;
+  color: #0095f6;
+  border: none;
+  cursor: pointer;
+}
+.follow-btn {
+  margin-left: auto;
+  background: #0095f6;
+  border: none;
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.follow-btn.unfollow {
+  background: transparent;
+  color: #0095f6;
+  border: 1px solid #262626;
+}
+.likes-count {
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.comments p {
+  padding: 0 10px;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+.comment-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-top: 1px solid #262626;
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+  outline: none;
+}
+.profile-link {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+.profile-link:hover {
+  opacity: 0.9;
+}
+.auth-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.auth-btn {
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.login-btn {
+  background: #0095f6;
+  color: white;
+}
+.login-btn:hover {
+  background: #1877f2;
+}
+.signup-btn {
+  color: #0095f6;
+}
+.signup-btn:hover {
+  text-decoration: underline;
+}
+
