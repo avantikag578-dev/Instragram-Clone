@@ -13,11 +13,9 @@ body{
   align-items:center;
   height:100vh;
 }
-
 .auth-container{
   width:350px;
 }
-
 .card{
   background:white;
   border:1px solid #dbdbdb;
@@ -25,7 +23,6 @@ body{
   text-align:center;
   box-shadow:0 4px 12px rgba(0,0,0,0.05);
 }
-
 .logo{
   font-family:'Segoe Script', cursive;
   font-size:38px;
@@ -38,13 +35,11 @@ body{
     #962fbf,
     #4f5bd5
   );
- background-clip: text;              /* standard */
-  -webkit-background-clip: text;      /* chrome/safari */
-
-  color: transparent;                 /* standard */
+ background-clip: text;             
+  -webkit-background-clip: text;      
+  color: transparent;                 
   -webkit-text-fill-color: transparent;
 }
-
 input{
   width:100%;
   padding:11px;
@@ -54,12 +49,10 @@ input{
   border-radius:4px;
   font-size:14px;
 }
-
 input:focus{
   outline:none;
   border-color:#a8a8a8;
 }
-
 button{
   width:100%;
   padding:9px;
@@ -72,11 +65,9 @@ button{
   cursor:pointer;
   margin-top:12px;
 }
-
 button:hover{
   background:#1877f2;
 }
-
 .divider{
   display:flex;
   align-items:center;
@@ -84,7 +75,6 @@ button:hover{
   color:#8e8e8e;
   font-size:13px;
 }
-
 .divider::before,
 .divider::after{
   content:"";
@@ -92,11 +82,9 @@ button:hover{
   height:1px;
   background:#dbdbdb;
 }
-
 .divider span{
   margin:0 10px;
 }
-
 .signup-box{
   background:white;
   border:1px solid #dbdbdb;
@@ -105,7 +93,6 @@ button:hover{
   text-align:center;
   font-size:14px;
 }
-
 .signup-box a{
   color:#0095f6;
   font-weight:600;
@@ -113,32 +100,23 @@ button:hover{
 }
 </style>
 </head>
-
 <body>
 <div class="auth-container">
-
   <div class="card">
     <div class="logo">Instagram</div>
-
     <input type="text" id="username" placeholder="Phone number, username, or email">
     <input type="password" id="password" placeholder="Password">
-
     <button onclick="login()">Log in</button>
-
     <div class="divider"><span>OR</span></div>
-
     <p style="font-size:12px;color:#00376b;cursor:pointer;">
       Forgot password?
     </p>
   </div>
-
   <div class="signup-box">
     Don't have an account?
     <a href="register.html">Sign up</a>
   </div>
-
 </div>
-
 <script src="js/login.js"></script>
 </body>
 </html>
